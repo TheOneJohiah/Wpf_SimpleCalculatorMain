@@ -52,7 +52,6 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -67,6 +66,59 @@
                 Margin="0,0,10,0"
                 FontSize="20"
                 />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Content="Velocity"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0,0,10,0"
+                FontSize="20"
+                />
+            <Button
+                Name="Button_Calculate"
+                Grid.Row="2"
+                Grid.Column="1"
+                Width="100"
+                Height="30"
+                Content="Calculate"
+                HorizontalAlignment="Left"/>
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                Content="Momentum"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0,0,10,0"
+                FontSize="20"
+                />
+            <TextBox
+                x:Name="Label_Mass"
+                Grid.Row="0"
+                Grid.Column="1"
+                Width="100"
+                Height="25"
+                Padding="5,0,0,0"
+                HorizontalAlignment="Left"
+                Template="{StaticResource RoundTextboxCornterTemplate}"/>
+            <TextBox
+                x:Name="Label_Velocity"
+                Grid.Row="1"
+                Grid.Column="1"
+                Width="100"
+                Height="25"
+                Padding="5,0,0,0"
+                HorizontalAlignment="Left"
+                Template="{StaticResource RoundTextboxCornterTemplate}"/>
+            <TextBox
+                x:Name="Label_Momentum"
+                Grid.Row="3"
+                Grid.Column="1"
+                Width="100"
+                Height="25"
+                Padding="5,0,0,0"
+                HorizontalAlignment="Left"
+                Template="{StaticResource RoundTextboxCornterTemplate}"/>
         </Grid>
     </Grid>
 </Window>
